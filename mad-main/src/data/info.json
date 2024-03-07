@@ -1,10 +1,10 @@
 {
-    "alias": "Tonidev",
-    "hero_img" : "img/hero_img.webp",
-    "name": "Hi, I'm Antonio",
-    "description": "I'm a full-stack developer with a passion for web technologies and a love for design.",
+    "alias": "Naejdev",
+    "hero_img" : "img/cvfoto.webp",
+    "name": "Hi, I'm Jean",
+    "description": "I'm a full-stack developer with a passion for creating beautiful and functional websites. I'm always looking for new challenges and opportunities to learn and grow.",
     "resume": "resources/CV.pdf",
-    "formspreeUrl": "https://formspree.io/f/xeqykrok",
-    "gitUrl": "https://github.com/EseToni/Portfolio-Template",
-    "linkedinUrl": "https://www.linkedin.com/in/antonio-fullstackdev/"
+    "formspreeUrl": "https://formspree.io/f/xkndzjbv",
+    "gitUrl": "https://github.com/naejbravo",
+    "linkedinUrl": "https://www.linkedin.com/in/jean-bravo/"
 }

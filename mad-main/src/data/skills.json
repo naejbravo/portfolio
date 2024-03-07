@@ -15,11 +15,6 @@
         "description": "Essential web markup and styling."
     },
     {
-        "name": "Python",
-        "icon": "icons/python.svg",
-        "description": "Readability and versatility in scripting."
-    },
-    {
         "name": "Php",
         "icon": "icons/php.svg",
         "description": "Server-side scripting for web."
@@ -45,11 +40,6 @@
         "description": "React-based web application framework."
     },
     {
-        "name": "Laravel",
-        "icon": "icons/laravel.svg",
-        "description": "Elegant PHP framework for web apps."
-    },
-    {
         "name": "NodeJs",
         "icon": "icons/nodejs.svg",
         "description": "JavaScript runtime for server-side development."
@@ -60,44 +50,14 @@
         "description": "Minimal and flexible Node.js web framework."
     },
     {
-        "name": "NestJs",
-        "icon": "icons/nestjs.svg",
-        "description": "Fast and minimalist web framework for Node.js."
-    },
-    {
-        "name": "WebSockets",
-        "icon": "icons/websockets.svg",
-        "description": "Cross-platform real-time communication."
-    },
-    {
         "name": "Moongose",
         "icon": "icons/orm.svg",
         "description": "Elegant MongoDB object modeling tool."
     },
     {
-        "name": "Sequelize",
-        "icon": "icons/orm.svg",
-        "description": "Promise-based Node.js ORM for databases."
-    },
-    {
-        "name": "Jest",
-        "icon": "icons/jest.svg",
-        "description": "Delightful JavaScript testing framework."
-    },
-    {
-        "name": "Redux",
-        "icon": "icons/redux.svg",
-        "description": "Predictable state container for JS apps."
-    },
-    {
         "name": "Tailwind",
         "icon": "icons/tailwind.svg",
         "description": "Utility-first CSS framework for UI."
-    },
-    {
-        "name": "Bootstrap",
-        "icon": "icons/bootstrap.svg",
-        "description": "Front-end framework for responsive design."
     },
     {
         "name": "Sass",
@@ -123,10 +83,5 @@
         "name": "Docker",
         "icon": "icons/docker.svg",
         "description": "Open-source platform for container deployment."
-    },
-    {
-        "name": "Aws",
-        "icon": "icons/aws.svg",
-        "description": "Amazon's on-demand cloud computing services."
     }
 ]
