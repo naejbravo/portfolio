@@ -7,5 +7,14 @@
 		"description": "I built this website using Astro, brought it to life with JavaScript, and styled it with Tailwind for a smooth and engaging user experience. Deployed with Vercel for fast and efficient delivery.",
 		"image": "img/kingflakes.webp",
 		"link": "https://kingflakes.es"
+	},
+	{
+		"name": "Exclusive renovations",
+		"color_1": "#295e54",
+		"color_2": "#292d5e",
+		"title": "Landing page",
+		"description": "First app for a business, developed with astroJS, support for languajes and fast charge",
+		"image": "img/er.png",
+		"link": "https://exclusive-renovation.vercel.app/"
 	}
 ]
