@@ -1,0 +1,82 @@
+---
+const props = Astro.props;
+const projects = [
+    {
+        name: "KingFlakes",
+        description: "A web for restaurant that include menu and about us",
+        image: "image1.jpg",
+        link: "https://project1.com"
+    },
+    {
+        name: "Valentines",
+        description: "This web is like a gift for valentines day",
+        image: "image1.jpg",
+        link: "https://project1.com"
+    },
+    {
+        name: "Evin Haddad portfolio",
+        description: "A portfolio for Evin Haddad, architect visualization",
+        image: "image1.jpg",
+        link: "https://project1.com"
+    }
+]
+---
+<div class="projects" id="projects" data-aos="fade-up">
+    <h2>{props.title}</h2>
+    <div class="projectsitems">
+        {
+            projects.map((project) => {
+                return <div class="project">
+                    <img src={project.image} alt={project.name} />
+                    <h3>{project.name}</h3>
+                    <p>{project.description}</p>
+                    <a href={project.link}>View Project</a>
+                </div>
+            })
+        }
+    </div>
+</div>
+
+<style>
+    .projects {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 1rem;
+        width: 60%;
+        max-width: 60%;
+        padding: var(--spacing3);
+        @media screen and (max-width: 768px) {
+			max-width: 100%;
+			width: 100%;
+		}
+        scroll-margin-top: 150px;
+    }
+
+    .projectsitems {
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+        justify-content: left;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .project {
+        background: var(--color10);
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: var(--spacing2);
+        color: var(--color100);
+        text-align: center;
+        padding: var(--spacing3);
+        & img {
+            width: 100%;
+        }
+    }
+    
+</style>

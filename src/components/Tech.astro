@@ -1,0 +1,47 @@
+---
+import TechItem from "./TechItem.astro"
+const props = Astro.props;
+const techs = [
+    {name: "Javascript", svg: "js"},
+    {name: "Astro", svg: "astro"},
+    {name: "Typescript", svg: "ts"},
+    {name: "Node", svg: "node"},
+    {name: "Tailwind", svg: "tailwind"}
+];
+---
+
+<div class="tech">
+    <h2>{props.title}</h2>
+    <div class="techitems">
+        {
+            techs.map((tech) => {
+                return <TechItem name={tech.name} svg={tech.svg}/>
+            })
+        }
+    </div>
+</div>
+
+<style>
+    .tech {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 60%;
+        max-width: 60%;
+        padding: var(--spacing3);
+        @media screen and (max-width: 768px) {
+			max-width: 100%;
+			width: 100%;
+		}
+    }
+
+    .techitems
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        gap: var(--spacing2);
+        flex-wrap: wrap;
+    }
+</style>

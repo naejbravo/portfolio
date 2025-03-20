@@ -1,0 +1,26 @@
+---
+import Github from "./icons/Github.astro"
+---
+
+<div class="hero" id="about">
+    <h2>Hey there, my name is</h2>
+    <h1>Jean Bravo</h1>
+    <p class="hero__description">I’m a full-stack developer based in Spain. I’m characterized by building accessible websites. Using design styles for prioritizing organization and quality of the projects. Every day improving for growth myself in my road of full-stack developer</p>
+    <a href="https://github.com/naejbravo">
+        <p>Visit my github!</p> <Github />
+    </a>
+</div>
+
+<style>
+    a:hover {
+        animation: bounce;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes bounce {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0); }
+    }
+</style>

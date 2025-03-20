@@ -1,0 +1,39 @@
+---
+const props = Astro.props;
+import js from '../assets/js.svg';
+import astro from '../assets/astro.svg';
+import ts from '../assets/ts.svg';
+import node from '../assets/node.svg';
+import tailwind from '../assets/tailwind.svg';
+---
+<div class="techitem">
+        <img src={props.svg == 'js' ?  js.src 
+                : props.svg == 'astro' ? astro.src
+                : props.svg == 'ts' ? ts.src
+                : props.svg == 'node' ? node.src
+                : props.svg == 'tailwind' ? tailwind.src : ''} alt={props.name} />
+<p>{props.name}</p>
+</div>
+
+<style>
+    .techitem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: var(--color10);
+        width: 100px;
+        height: 100px;
+        padding: 1rem;
+        gap: var(--spacing2);
+        & img {
+          width: 30%;
+
+        }
+
+        & p {
+            color: var(--color100);
+            margin: 0;
+        }
+    }
+</style>
