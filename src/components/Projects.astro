@@ -21,7 +21,11 @@ const projects = [
         {
             projects.map((project) => {
                 return <div class="project">
-                    <img src={project.image} alt={project.name} />
+                    <a href={project.link}>
+                        <div class="wrapper">
+                            <img src={project.image} alt={project.name} />
+                        </div>
+                    </a>
                     <h3>{project.name}</h3>
                     <p>{project.description}</p>
                     <a href={project.link}>View Project</a>
@@ -68,8 +72,28 @@ const projects = [
         color: var(--color100);
         text-align: center;
         padding: var(--spacing3);
+        overflow: hidden;
+        & > a {
+            color: var(--color30);
+            text-decoration: none;
+            &:hover {
+                color: var(--color100);
+            }
+        }
         & img {
             width: 100%;
+            border-radius: 16px 0 16px 0;
+        }
+    }
+
+    .wrapper {
+        overflow: hidden;
+        & img {
+            transition: 0.5s ease-in-out all;
+        }
+        & img:hover{
+            transform: scale(1.5);
+            transform-origin: top;
         }
     }
     
