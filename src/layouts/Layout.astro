@@ -157,12 +157,11 @@ import '@fontsource-variable/roboto-slab';
 		padding: 0 var(--spacing3);
 		width: 200px;
 		padding: var(--spacing3);
-		animation: bounce;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
+		animation: bounce 2s infinite ease-in-out;
+		transition: transform 1s ease-in-out;
 		margin-top: var(--spacing3);
 		&:hover {
-			animation: none;
+			animation-play-state: paused;
 		}
     }
 
