@@ -3,9 +3,9 @@ const props = Astro.props;
 ---
 <div class="contact" id="contact" data-aos="fade-up">
     <h2>{props.title}</h2>
-    <form class="form">
-        <input type="email" placeholder="your@email.com" />
-        <textarea placeholder="What about work together?"></textarea>
+    <form class="form" action="https://formsubmit.co/naejbravo@gmail.com" method="POST">
+        <input type="email" name="email" placeholder="your@email.com" required/>
+        <textarea name="message" placeholder="What about work together?" required></textarea>
         <button type="submit">Submit</button>
     </form>
 </div>
